@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/logo.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/26151a8556.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/Resposive.css">
+    <title>Integra Network</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <!-- Start Usr Bar -->
+        <section class="user-bar flex">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./Img/logo.png" alt="Integra Network">
+                </a>
+            </div>
+            <div class="user-part flex">
+                <ul class="user-list">
+                    <li class="icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </li>
+                    <li class="icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </li>
+                    <li class="icon">
+                        <i class="fa-solid fa-users"></i>
+                    </li>
+                    <li class="icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </li>
+                </ul>
+                <div class="user-pic flex-c">
+                    <span> LT </span>
+                </div>
+            </div>
+        </section>
+        <!-- Start Usr Bar -->
+        <!-- Start Navbar -->
+        <nav>
+            <div class="toggelNav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Start Main Nav -->
+            <ul class="main-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="drop-list">
+                    <a href="#">Configurazioni</a>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li class="extended">
+                                <a href="#">Contabilità</a>
+                                <div class="EXdropdown-menu">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">Clienti</a></li>
+                                        <li><a href="#">Agenzie</a></li>
+                                        <li><a href="#">Staff</a></li>
+                                        <li><a href="#">Fornitori</a></li>
+                                        <li><a href="#">Il tuo profilo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Anagrafica</a></li>
+                            <li><a href="#">Cespiti</a></li>
+                            <li><a href="#">Destinazioni</a></li>
+                            <li><a href="#">Prodotti</a></li>
+                            <li><a href="#">Categorie</a></li>
+                            <li><a href="#">Documenti</a></li>
+                            <li><a href="#">Magazzino</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drop-list">
+                    <a href="#">Documenti</a>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li class="extended">
+                                <a href="#">Ciclo attivo</a>
+                                <div class="EXdropdown-menu">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#">DDT Cliente</a></li>
+                                        <li><a href="#">Scadenziario</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Amministrazione</a></li>
+                            <li><a href="#">Fatturazione attiva</a></li>
+                            <li><a href="#">Fatturazione passiva</a></li>
+                            <li><a href="#">Statistiche</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Servizi postali</a></li>
+                <li><a href="#">Servizi idrici</a></li>
+                <li><a href="#">Servizi digitali</a></li>
+                <li><a href="#">Gestione</a></li>
+                <li><a href="#">Controllo</a></li>
+                <li><a href="#">Commerciale</a></li>
+                <li><a href="#">Supporto</a></li>
+            </ul>
+            <!-- End Main Nav -->
+            <!-- Start Details Nav -->
+            <ul class="details-nav">
+                <li class="active"><a href="#">Preventivi</a></li>
+                <li><a href="#">Capienze</a></li>
+                <li><a href="#">Listini</a></li>
+                <li><a href="#">Agenti</a></li>
+                <li><a href="#">CRM</a></li>
+            </ul>
+            <!-- End Details Nav -->
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+    <!-- Strat Main -->
+    <main>
+        <!-- Start Controls Section -->
+        <section class="controls flex">
+            <div class="filter">
+                <button id="filter btn">
+                    Filtra
+                </button>
+            </div>
+            <div class="new-document">
+                <a href="Richiesta preventivo.html">
+                    <button>
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span> Nuovo preventivo</span>
+                    </button>
+                </a>
+            </div>
+        </section>
+        <!-- End Controls Section -->
+        <!-- Start Tabel Section -->
+        <section class="table">
+            <div class="details-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Azioni</th>
+                            <th>Numero preventivo</th>
+                            <th>Agenzia</th>
+                            <th>Cliente</th>
+                            <th>Stato</th>
+                            <th>Creato da</th>
+                            <th>Agente</th>
+                            <th>Data creazione</th>
+                            <th>Approva da</th>
+                            <th>Data approvazione</th>
+                            <th>Allegati</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Auto Fill -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="11">
+                                <div class="table-footer flex">
+                                    <span>Risultati per pagina</span>
+                                    <div class="results-count">
+                                        <ul>
+                                            <li>20</li>
+                                        </ul>
+                                        <i class="fa-solid fa-sort-down"></i>
+                                    </div>
+                                    <ul class="pagination">
+                                        <li class="btn">1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        ...
+                                        <li>22</li>
+                                        <li>23</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <!-- End Tabel Section -->
+    </main>
+    <!-- End Main -->
+    <!-- Start Slider -->
+    <div class="slider" id="Slider">
+        <div class="top flex">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>
+                <a href="#">
+                    Apri il preventivo con un’altro tab
+                </a>
+            </p>
+        </div>
+        <div class="slider-body">
+            <div class="client-data flex">
+            </div>
+            <div class="details flex">
+                <div class="products-list">
+                    <div class="head">
+                        <h3>
+                            Lista prodotti
+                        </h3>
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <div class="details-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Azioni</th>
+                                    <th>Prodotto</th>
+                                    <th>
+                                        Codice prodotto
+                                        <br>
+                                        Tipologia
+                                    </th>
+                                    <th>Categoria <br> Servizio <br> Sottocategoria</th>
+                                    <th>IVA <br> Sconto</th>
+                                    <th>Prezzo netto <br> Quantità <br> Prezzo netto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="colspan">
+                                    <td colspan="6">Commessa N° 20220630112016-62BD86F02DB78</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="icons dots F">
+                                        <div class="flex-c">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <b> Busta tari - 1 fg f/r + 1 fg f24</b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            tari22
+                                            <br>
+                                            Combinato
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Postale <br> Servizi stampati <br> Stampa
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            22% <br> 0%
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            0,15 € <br> 1000 <br> 150,00 €
+                                        </b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="icons dots">
+                                        <div class="flex-c">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        F24
+                                    </td>
+                                    <td>
+                                        0F24
+                                        <br>
+                                        Base
+                                    </td>
+                                    <td>
+                                        Postale <br> Servizi stampati <br> Stampa
+                                    </td>
+                                    <td>
+                                        22% <br> 0%
+                                    </td>
+                                    <td>
+                                        0,03 € <br> 1000 <br> 30,00 €
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="icons dots">
+                                        <div class="flex-c">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        BUSTA DUE FINISTRE
+                                    </td>
+                                    <td>
+                                        BUSTA2F
+                                        <br>
+                                        Base
+                                    </td>
+                                    <td>
+                                        Postale <br> Servizi stampati <br> Stampa
+                                    </td>
+                                    <td>
+                                        22% <br> 0%
+                                    </td>
+                                    <td>
+                                        0,07 € <br> 1000 <br> 70,00 €
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="icons dots L">
+                                        <div class="flex-c">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        Foglio A4 stampa b/N - SOLO FRONTE
+                                    </td>
+                                    <td>
+                                        A4BN
+                                        <br>
+                                        Base
+                                    </td>
+                                    <td>
+                                        Postale <br> Servizi stampati <br> Stampa
+                                    </td>
+                                    <td>
+                                        22% <br> 0%
+                                    </td>
+                                    <td>
+                                        0,05 € <br> 7500 <br> 375,00 €
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="icons dots D">
+                                        <div class="flex-c">
+                                            <span>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-sort-down"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        Foglio A4 stampa b/N - SOLO FRONTE
+                                    </td>
+                                    <td>
+                                        A4BN
+                                        <br>
+                                        Base
+                                    </td>
+                                    <td>
+                                        Postale <br> Servizi stampati <br> Stampa
+                                    </td>
+                                    <td>
+                                        22% <br> 0%
+                                    </td>
+                                    <td>
+                                        0,05 € <br> 7500 <br> 50,00 €
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="info">
+                        <h3>
+                            <i class="fa-solid fa-caret-right"></i>
+                            Info aggiuntive
+                        </h3>
+                        <div class="Files flex">
+                            <div class="file-name">
+                                <h4>Condizioni</h4>
+                                <div class="file">
+                                </div>
+                            </div>
+                            <div class="file-name">
+                                <h4>Note</h4>
+                                <div class="file">
+                                </div>
+                            </div>
+                            <div class="file-name">
+                                <h4>
+                                    Elementi personalizzati
+                                </h4>
+                                <div class="file">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="box">
+                        <h3>Azioni</h3>
+                        <button class="ligth-green">Approva</button>
+                        <button class="light-red">Rigetta</button>
+                        <button>Modifica</button>
+                    </div>
+                    <div class="box">
+                        <h3>Riepilogo</h3>
+                        <div class="flex">Competenze <span>525,00 €</span></div>
+                        <div class="flex">
+                            <p>IVA <span> 525,00 €</span></p>
+                            <span>115,50 €</span>
+                        </div>
+                        <div class="flex p"> Totale da pagare <span>640,50 €</span> </div>
+                        <div class="flex p"> Capienza determine <span class="Price1"> 640,50 €</span> </div>
+                        <div class="flex p"> Rimanente <span class="Price2">20,50 €</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

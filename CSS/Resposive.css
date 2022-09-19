@@ -1,0 +1,91 @@
+@media (max-width: 1200px) {
+    .details-table table .status button {
+        position: relative;
+        transform: translateY(0);
+        width: fit-content;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    nav {
+        position: relative;
+    }
+
+    nav .toggelNav {
+        display: block;
+        font-size: 20px;
+        background-color: var(--main-bg);
+        padding: 5px 10px;
+        border-radius: 0 5px 5px 0;
+        color: var(--headline);
+        position: relative;
+        left: 0;
+    }
+
+    nav .toggelNav.Q {
+        left: 250px;
+        margin-left: auto;
+        transition: 0.3s;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 9;
+    }
+
+    .main-nav.open {
+        left: 0;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li .dropdown-menu {
+        top: 0;
+        left: 100%;
+        transform: translateX(0);
+    }
+
+}
+
+@media (max-width: 820px) {
+    .user-bar .user-part {
+        position: relative;
+    }
+
+    .user-bar .user-list {
+        position: absolute;
+        top: -160px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 45px;
+        background: var(--main-color);
+        color: #fff;
+        z-index: 2;
+        border-radius: 20px;
+        padding: 50px 0 0 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .user-bar .user-list li {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .user-bar .user-list.openUserList {
+        transition: 0.5s ease-in-out;
+        top: -5px;
+    }
+
+    .user-bar .user-pic {
+        z-index: 2;
+    }
+}
