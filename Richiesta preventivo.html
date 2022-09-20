@@ -41,7 +41,7 @@
                         <i class="fa-regular fa-bell"></i>
                     </li>
                 </ul>
-                <div class="user-pic flex">
+                <div class="user-pic flex-c">
                     <span> LT </span>
                 </div>
             </div>
@@ -257,13 +257,17 @@
                                     <h3>Referente</h3>
                                     <div class="client flex">
                                         <label>Seleziona ref</label>
-                                        <div class="CPL flex">
-                                            <select class="form-control" disabled>
-                                                <option value="" disabled selected>inserisci nome cliente</option>
-                                            </select>
-                                            <button class="btn">
-                                                crea nuovo contatto
-                                            </button>
+                                        <div class="CPL">
+                                            <div class="flex">
+                                                <div class="select">
+                                                    <input type="text" class="form-control" disabled
+                                                        placeholder="inserisci nome cliente">
+                                                    <i class="fa-solid fa-sort-down"></i>
+                                                </div>
+                                                <button class="btn">
+                                                    crea nuovo contatto
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +293,7 @@
                         <div class="cell">
                             <div class="options flex">
                                 <div class="add-file flex">
-                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <input class="uploadFile" type="file" name="" id="input">
                                     <span>Aggiungi condizione</span>
                                 </div>
                                 <div class="more flex">
@@ -308,7 +312,7 @@
                         <div class="cell">
                             <div class="options flex">
                                 <div class="add-file flex">
-                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <input class="uploadFile" type="file" name="" id="input">
                                     <span>Aggiungi nota</span>
                                 </div>
                                 <div class="more flex">
@@ -326,7 +330,7 @@
                         <div class="cell">
                             <div class="options flex">
                                 <div class="add-file flex">
-                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <input class="uploadFile" type="file" name="" id="input">
                                     <span>Aggiungi elemento</span>
                                 </div>
                                 <div class="more flex">
