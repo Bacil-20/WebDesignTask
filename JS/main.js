@@ -307,16 +307,20 @@ if (SelectList) {
         let SelectedClient = ""
         SelectedClient = e.target.textContent
         // Checking If Client Has Stored Data ? Render : Reload
-        ClientData[SelectedClient] ?
+        if (ClientData[SelectedClient]) {
             Object.getOwnPropertyNames(ClientData[SelectedClient]).map((element) => {
                 let TagrgetElement = document.getElementById(element)
                 TagrgetElement.removeAttribute('disabled')
                 TagrgetElement.value = ClientData[SelectedClient][element]
 
-            }) : location.reload()
+            })
 
-        const Notes = document.querySelectorAll(".Fixed-Elements .cell .options")
-        ClientFileR(Notes)
+            const Notes = document.querySelectorAll(".Fixed-Elements .cell .options")
+            ClientFileR(Notes)
+        } else {
+            location.reload()
+        }
+
         this.classList.remove("show")
     });
     // ***  Upload File 
