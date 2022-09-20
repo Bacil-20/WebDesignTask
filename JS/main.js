@@ -49,13 +49,7 @@ function ClientFileR(prop) {
                         `<i class="fa-regular fa-square-plus plus"></i>` : ""
             }
                         <span>
-                        ${i === 0 ?
-                `Condizione` : i === 1 ?
-                    `Nota` : i === 2 ?
-                        `Field` : ""
-            } 
-                        sogert
-                         </span>
+                        ${i === 0 ? `Condizione` : i === 1 ? `Nota` : i === 2 ? `Field` : ""} sogert</span>
                     </div>
                     <i class="fa-solid fa-xmark orange-icon"></i>
                 </div>
@@ -325,6 +319,18 @@ if (SelectList) {
         ClientFileR(Notes)
         this.classList.remove("show")
     });
+    // ***  Upload File 
+    // Upload File Input
+    const inputElement = document.getElementById("input");
+    inputElement.addEventListener("change", handleFiles, false);
+    function handleFiles() {
+        const fileList = this.files[0];
+        //Slice Only File Name
+        let SliceFileName = fileList.name.indexOf(".")
+
+        // console.log(fileList.name.slice(0, SliceFileName))
+        // console.log(this.parentElement.parentElement.nextElementSibling.firstElementChild.firstElementChild.firstElementChild.lastElementChild.textContent);
+    }
     // ***  Submit Form Data 
     // Submit Button 
     const Submit = document.getElementById("Ok")

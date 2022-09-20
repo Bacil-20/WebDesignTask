@@ -490,7 +490,7 @@ main .wraper {
 .quotation {
     width: 75%;
     height: 100%;
-    padding: 20px 15px;
+    margin: 20px 15px;
 }
 
 .quotation .Quotation-title {
@@ -615,6 +615,10 @@ main .wraper {
 
 .quotation form {
     font-size: 13px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: auto;
 }
 
 .form-control {
@@ -666,6 +670,10 @@ main .wraper {
     min-width: 100%;
 }
 
+.quotation form .client .select input:nth-child(2) {
+    cursor: pointer;
+}
+
 .quotation form .client .select i {
     position: absolute;
     top: 50%;
@@ -700,6 +708,7 @@ main .wraper {
 .quotation form .client .Clients li {
     display: block;
     padding: 5px 20px;
+    cursor: pointer;
 }
 
 
@@ -781,15 +790,34 @@ main .wraper {
     border-radius: 15px;
 }
 
-.Fixed-Elements .cell .options .add-file {}
-
-.Fixed-Elements .cell .options .add-file i {
-    color: #188EFF;
-    font-size: 22px;
+.Fixed-Elements .cell .options .add-file .uploadFile {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
     margin-right: 5px;
+    cursor: pointer;
 }
 
-.Fixed-Elements .cell .options .more {}
+.Fixed-Elements .cell .options .add-file .uploadFile::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #188EFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
 
 .Fixed-Elements .cell .options .more i {
     width: 25px;
@@ -967,6 +995,10 @@ main .wraper {
     background-color: #DBDDE1;
 }
 
+.slider .details-table {
+    height: calc(100vh - 288px);
+}
+
 .slider .details-table th,
 .slider .details-table td {
     font-size: 10px;
@@ -985,7 +1017,7 @@ main .wraper {
 
 .slider .details-table .icons {
     position: relative;
-    width: 15%;
+    min-width: 80px;
 }
 
 .slider .details-table .icons span {
@@ -1007,15 +1039,15 @@ main .wraper {
 .slider .details-table .icons.dots::after {
     background-color: #fff;
     border: 1px solid var(--main-color);
-    width: 8px;
-    height: 8px;
-    left: 8%;
+    width: 9px;
+    height: 9px;
+    left: 8px;
 }
 
 .slider .details-table .icons.dots::before {
     background-color: var(--main-color);
     opacity: 0.5;
-    left: 12%;
+    left: 13px;
 }
 
 .slider .details-table .icons.dots.F::before {
@@ -1076,6 +1108,7 @@ main .wraper {
 
 .slider .details .actions .box div.p {
     font-size: 16px;
+    text-align: left;
 }
 
 .slider .details .info {
